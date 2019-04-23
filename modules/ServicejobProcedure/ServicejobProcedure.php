@@ -114,6 +114,7 @@ class ServicejobProcedure extends CRMEntity {
 		if ($event_type == 'module.postinstall') {
 			// TODO Handle post installation actions
 			$this->setModuleSeqNumber('configure', $modulename, $modulename.'-', '0000001');
+			$this->installProcedureFieldInProducts();
 		} elseif ($event_type == 'module.disabled') {
 			// TODO Handle actions when this module is disabled.
 		} elseif ($event_type == 'module.enabled') {
@@ -154,5 +155,23 @@ class ServicejobProcedure extends CRMEntity {
 	 * You can override the behavior by re-defining it here.
 	 */
 	//public function get_dependents_list($id, $cur_tab_id, $rel_tab_id, $actions=false) { }
+
+	public function installProcedureFieldInProducts() {
+		require_once 'vtlib/Vtiger/Module.php';
+
+		$module 			= Vtiger_Module::getInstance('Products');
+		$block 				= Vtiger_Block::getInstance('LBL_PRODUCT_INFORMATION', $module);
+
+		$field 				= new Vtiger_Field();
+		$field->name 		= 'sjprocedureid';
+		$field->table 		= 'vtiger_products';
+		$field->column 		= 'sjprocedureid';
+		$field->columntype 	= 'INT(11)';
+		$field->uitype 		= 10;
+		$field->typeofdata 	= 'V~O';
+
+		$block->addField($field);
+		$field->setRelatedModules(array('ServicejobProcedure'));
+	}
 }
 ?>

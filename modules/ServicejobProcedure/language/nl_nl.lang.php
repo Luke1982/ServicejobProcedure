@@ -13,10 +13,15 @@ $mod_strings = array(
 	'SINGLE_ServicejobProcedure' => 'Keuringsprocedure',
 	'ServicejobProcedure ID' => 'Keuringsprocedure ID',
 
-	'LBL_CUSTOM_INFORMATION' => 'Custom Information',
-	'LBL_MODULEBLOCK_INFORMATION' => 'ModuleBlock Information',
-	'LBL_DESCRIPTION_INFORMATION' => 'Verkoopkans omschrijving',
+	'LBL_SJP_INFORMATION' => 'Procedure informatie',
+	'sjprocedure_no' => 'Nummer keuringsprocedure',
+	'sjprocedure_productservice' => 'Facturatie dienst of product',
+	'sjprocedurename' => 'Naam procedure',
+	'LBL_DESCRIPTION_INFORMATION' => 'Omschrijving',
+	'SJP_RELATED_PRODUCTS' => 'Producten waarvoor dit een procedure is',
 
-	'ModuleFieldLabel' => 'ModuleFieldLabel Text',
+	'SJP_HELP_SJPNAME' => 'De naam van de procedure. Let op: dit is een belangrijke naam en moet precies goed geschreven worden. De monteursportal gebruikt deze naam namelijk om de keuringsprocedure te kiezen.',
+	'SJP_HELP_PRODUCTSERVICE' => 'Kies een dienst of product dat bepaalt hoe deze keuring op een factuur of order moet worden belast aan de klant.',
+
 );
 ?>
