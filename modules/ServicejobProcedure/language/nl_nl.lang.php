@@ -17,11 +17,13 @@ $mod_strings = array(
 	'sjprocedure_no' => 'Nummer keuringsprocedure',
 	'sjprocedure_productservice' => 'Facturatie dienst of product',
 	'sjprocedurename' => 'Naam procedure',
+	'sjprocedureportalname' => 'Portalprocedure indien anders dan naam',
 	'LBL_DESCRIPTION_INFORMATION' => 'Omschrijving',
 	'SJP_RELATED_PRODUCTS' => 'Producten waarvoor dit een procedure is',
 
 	'SJP_HELP_SJPNAME' => 'De naam van de procedure. Let op: dit is een belangrijke naam en moet precies goed geschreven worden. De monteursportal gebruikt deze naam namelijk om de keuringsprocedure te kiezen.',
 	'SJP_HELP_PRODUCTSERVICE' => 'Kies een dienst of product dat bepaalt hoe deze keuring op een factuur of order moet worden belast aan de klant.',
+	'SJP_HELP_SJPPORTALNAME' => 'Als de naam van de procedure in de monteursportal anders is dan de naam van de procedure hier, kies die naam dan uit deze lijst. Als je geen keuze maakt, wordt de naam van de procedure gebruikt om in de portal een procedure te kiezen.',
 
 );
 ?>

@@ -3,7 +3,7 @@
 	<name>ServicejobProcedure</name>
 	<label>ServicejobProcedure</label>
 	<parent>Tools</parent>
-	<version>0.1</version>
+	<version>0.11</version>
 	<short_description>A detailmodule for the ServiceJob module. Had no real function without that context.</short_description>
 	<dependencies>
 		<vtiger_version>5.4.0</vtiger_version>
@@ -12,7 +12,7 @@
 	<license>
 		<inline><![CDATA[
 			/*************************************************************************************************
-			* Copyright 2016 MajorLabel -- This file is a part of MajorLabel coreBOS Customizations.
+			* Copyright 2019 MajorLabel -- This file is a part of MajorLabel coreBOS Customizations.
 			* Licensed under the vtiger CRM Public License Version 1.1 (the "License"); you may not use this
 			* file except in compliance with the License. You can redistribute it and/or modify it
 			* under the terms of the License. MajorLabel reserves all rights not expressly
@@ -26,7 +26,7 @@
 			* at <http://corebos.org/documentation/doku.php?id=en:devel:vpl11>
 			*************************************************************************************************
 			*  Module       : coreBOS ServicejobProcedure
-			*  Version      : 0.1
+			*  Version      : 0.11
 			*************************************************************************************************/
 			]]></inline>
 		</license>
@@ -120,6 +120,36 @@
 									<entityidfield>sjprocedureid</entityidfield>
 									<entityidcolumn>sjprocedureid</entityidcolumn>
 								</entityidentifier>
+							</field>
+							<field>
+								<fieldname>sjprocedureportalname</fieldname>
+								<uitype>16</uitype>
+								<columnname>sjprocedureportalname</columnname>
+								<tablename>vtiger_sjprocedure</tablename>
+								<generatedtype>1</generatedtype>
+								<fieldlabel>sjprocedureportalname</fieldlabel>
+								<readonly>1</readonly>
+								<presence>0</presence>
+								<selected>0</selected>
+								<sequence>4</sequence>
+								<maximumlength>255</maximumlength>
+								<typeofdata>V~M</typeofdata>
+								<quickcreate>0</quickcreate>
+								<quickcreatesequence>0</quickcreatesequence>
+								<displaytype>1</displaytype>
+								<info_type>BAS</info_type>
+								<helpinfo><![CDATA[SJP_HELP_SJPPORTALNAME]]></helpinfo>
+								<masseditable>0</masseditable>
+								<picklistvalues>
+									<picklistvalue>--None--</picklistvalue>
+									<picklistvalue>Keuring 2-plaats</picklistvalue>
+									<picklistvalue>Keuring 4-plaats</picklistvalue>
+									<picklistvalue>Keuring nul emissie</picklistvalue>
+									<picklistvalue>Keuring pedaaldrukmeter</picklistvalue>
+									<picklistvalue>Keuring roetmeter</picklistvalue>
+									<picklistvalue>Keuring viergastester</picklistvalue>
+									<picklistvalue>Keuring hefbrug</picklistvalue>
+								</picklistvalues>
 							</field>
 							<field>
 								<fieldname>assigned_user_id</fieldname>
