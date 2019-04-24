@@ -154,7 +154,7 @@
 								<helpinfo><![CDATA[SJP_HELP_SJPPORTALNAME]]></helpinfo>
 								<masseditable>0</masseditable>
 								<picklistvalues>
-									<picklistvalue>--None--</picklistvalue>
+									<picklistvalue>Geen</picklistvalue>
 									<picklistvalue>Keuring 2-plaats</picklistvalue>
 									<picklistvalue>Keuring 4-plaats</picklistvalue>
 									<picklistvalue>Keuring nul emissie</picklistvalue>
