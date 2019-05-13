@@ -61,7 +61,9 @@
 					`sjprocedureid` int(11) NOT NULL,
 					`sjprocedure_no` varchar(56) default NULL,
 					`sjprocedure_productservice` INT(11) NOT NULL, 
+					`altproductservice` INT(11) NOT NULL, 
 					`sjprocedurename` VARCHAR(255) NOT NULL,
+					`sjprocedureportalname` VARCHAR(255) NOT NULL,
 					PRIMARY KEY (`sjprocedureid`)
 					) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
 				</table>
