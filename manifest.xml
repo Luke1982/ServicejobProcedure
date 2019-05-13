@@ -3,7 +3,7 @@
 	<name>ServicejobProcedure</name>
 	<label>ServicejobProcedure</label>
 	<parent>Tools</parent>
-	<version>0.11</version>
+	<version>0.12</version>
 	<short_description>A detailmodule for the ServiceJob module. Had no real function without that context.</short_description>
 	<dependencies>
 		<vtiger_version>5.4.0</vtiger_version>
@@ -16,6 +16,17 @@
 				<name>vtiger_sjprocedure</name>
 				<sql><![CDATA[
 						ALTER TABLE vtiger_sjprocedure ADD COLUMN `sjprocedureportalname` VARCHAR(255) NULL
+					]]>
+				</sql>
+			</table>
+		</tables>
+	</migration>
+	<migration version='0.11'>
+		<tables>
+			<table>
+				<name>vtiger_sjprocedure</name>
+				<sql><![CDATA[
+						ALTER TABLE vtiger_sjprocedure ADD COLUMN `altproductservice` INT(11) NULL
 					]]>
 				</sql>
 			</table>
@@ -39,7 +50,7 @@
 			* at <http://corebos.org/documentation/doku.php?id=en:devel:vpl11>
 			*************************************************************************************************
 			*  Module       : coreBOS ServicejobProcedure
-			*  Version      : 0.11
+			*  Version      : 0.12
 			*************************************************************************************************/
 			]]></inline>
 		</license>
@@ -163,6 +174,30 @@
 									<picklistvalue>Keuring viergastester</picklistvalue>
 									<picklistvalue>Keuring hefbrug</picklistvalue>
 								</picklistvalues>
+							</field>
+							<field>
+								<fieldname>altproductservice</fieldname>
+								<uitype>10</uitype>
+								<columnname>altproductservice</columnname>
+								<tablename>vtiger_sjprocedure</tablename>
+								<generatedtype>1</generatedtype>
+								<fieldlabel>altproductservice</fieldlabel>
+								<readonly>1</readonly>
+								<presence>0</presence>
+								<selected>0</selected>
+								<sequence>5</sequence>
+								<maximumlength>100</maximumlength>
+								<typeofdata>V~M</typeofdata>
+								<quickcreate>0</quickcreate>
+								<quickcreatesequence>0</quickcreatesequence>
+								<displaytype>1</displaytype>
+								<info_type>BAS</info_type>
+								<helpinfo><![CDATA[SJP_HELP_ALTPRODUCTSERVICE]]></helpinfo>
+								<masseditable>0</masseditable>
+								<relatedmodules>
+									<relatedmodule>Products</relatedmodule>
+									<relatedmodule>Services</relatedmodule>
+								</relatedmodules>
 							</field>
 							<field>
 								<fieldname>assigned_user_id</fieldname>
