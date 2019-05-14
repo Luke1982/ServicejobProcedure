@@ -3,7 +3,7 @@
 	<name>ServicejobProcedure</name>
 	<label>ServicejobProcedure</label>
 	<parent>Tools</parent>
-	<version>0.12</version>
+	<version>0.13</version>
 	<short_description>A detailmodule for the ServiceJob module. Had no real function without that context.</short_description>
 	<dependencies>
 		<vtiger_version>5.4.0</vtiger_version>
@@ -50,7 +50,7 @@
 			* at <http://corebos.org/documentation/doku.php?id=en:devel:vpl11>
 			*************************************************************************************************
 			*  Module       : coreBOS ServicejobProcedure
-			*  Version      : 0.12
+			*  Version      : 0.13
 			*************************************************************************************************/
 			]]></inline>
 		</license>
